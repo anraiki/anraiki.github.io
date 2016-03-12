@@ -1,0 +1,438 @@
+/* CSS declarations go here */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin calcMinus($property, $expression1, $expression2) {
+  #{$property}: -moz-calc(#{$expression1} - #{$expression2});
+  #{$property}: -webkit-calc(#{$expression1} - #{$expression2});
+  #{$property}: calc(#{$expression1} - #{$expression2});
+}
+
+@mixin calcPlus($property, $expression1, $expression2) {
+  #{$property}: -moz-calc(#{$expression1} + #{$expression2});
+  #{$property}: -webkit-calc(#{$expression1} + #{$expression2});
+  #{$property}: calc(#{$expression1} + #{$expression2});
+}
+
+$viewWidth: 100%;
+$viewHeight: 100vh;
+$heightMinus: 71px;
+$mainColor: #313d2c;
+$accentColor: rgba(255, 165, 0, 1);
+
+body {
+	background-color: $mainColor;
+	font-family: 'Roboto Slab', serif;
+	color: #fff;
+}
+
+.anriTree {
+	@include calcMinus( height, $viewHeight, $heightMinus);
+	width: $viewWidth;
+
+	div {
+		position: absolute;
+		width: $viewWidth;
+		@include calcMinus( height, $viewHeight, $heightMinus);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.bg1 {
+		border-bottom: 200px solid $mainColor;
+		background-image: url('1-bg-front.png');
+		z-index: 11;
+	}
+
+	.bg1-2 {
+		background-image: url('1-bg-f-back.png');
+		z-index: 10;
+		border-bottom: 100px #444934 solid;
+	  outline: 50px #313D2C solid;
+	}
+
+	.bg2 {
+		background-image: url('2-bg-front2.png');
+		z-index: 9;
+	}
+
+	.bg3 {
+		background-image: url('3-bg-light.png');
+		z-index: 8;
+	}
+
+	.bg4 {
+		background-image: url('4-water-tree.png');
+		z-index: 7;
+	}
+
+	.bg5 {
+		background-image: url('5-water.png');
+		z-index: 5;
+	}
+
+	.bg6 {
+		background-image: url('6-mountains.png');
+		z-index: 6;
+	}
+
+	.bg7 {
+		background-image: url('7-sky.png');
+		z-index: 4;
+	}
+
+	.bg8-front {
+		background-image: url('vigor-front.svg');
+		z-index: 4;
+		border-top: solid 14vh #313D2C;
+		border-bottom: solid 25vh #313D2C;
+	}
+
+	.bg8-back {
+		background-image: url('vigor-back.svg');
+		z-index: 3;
+	}
+	
+	
+	.bg9-front {
+		background-image: url('water-front.svg');
+		z-index: 5;
+		background-position-y: top;
+		border-top: solid 100px #313D2C;
+		border-bottom: solid 300px #313D2C;
+	}
+	
+	.bg9-back {
+		background-image: url('water-back.svg');
+		z-index: 4;
+	}
+	
+	.bg10-front {
+		background-image: url('lava-front.svg');
+		z-index: 5;
+		background-position-y: top;
+		border-top: solid 230px #313D2C;
+		border-bottom: solid 300px #313D2C;
+	}
+	
+	.bg10-back {
+		background-image: url('lava-back.svg');
+		z-index: 4;
+		background-position-y: top;
+	}
+	
+	.bg-color {
+		background: #94a87a;
+		height: 200px;
+		z-index: 0;
+	}
+	
+}
+
+.after {
+		@include calcPlus( height, $viewHeight, 75px);
+	div {
+		@include calcPlus( height, $viewHeight, 75px);
+	}
+}
+
+.padTop {
+	padding-top: 150px;
+}
+
+.laurels {
+    stroke-width: 2px;
+    margin: 0 auto;
+    position: absolute;
+    transform-origin: 17% 3% 0px;
+	@include calcMinus( left, "50%", "339px");
+    top: -50px;
+}
+
+nav {
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 165, 0, .25);
+	height: 70px;
+	position: relative;
+	z-index: 20;
+	width: 100%;
+	background: $mainColor;
+	a {
+		margin: 0px;
+		padding: 15px 25px;
+		color: white;
+		text-decoration: none;
+		display:inline-block;
+		font-size: 1.5em;
+	}
+
+	a:hover {
+		color: $accentColor;
+	}
+}
+
+#aboutAnri, #lifeDesc, .desc {
+    position: relative;
+    z-index: 44;
+	width: $viewWidth;
+	
+	#mePicture {
+		border-radius: 150px;
+		margin: 0 5px;
+		border: 3px solid orange;
+		width: 7rem;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.meContent {
+		padding-bottom: 25px;
+	}
+	
+	.fa-stack {
+		font-size: 3rem;
+		vertical-align: super;
+	}
+	
+	.fa-inverse {
+		color: orange !important;
+	}
+	
+	h2, h3 {
+		color: $accentColor;
+		font-size: 4em;
+		margin: 25px;
+		position: relative;
+	}
+	
+	h3 {
+		margin-top: 100px;
+		font-size: 1.8em;
+	}
+	
+	div {
+		padding: 0;
+		text-align: center;
+	}
+	
+	hr {
+		border: 1px solid orange;
+		max-width: 500px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	p {
+		padding: 50px 0;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	
+	
+	.skillDesc {
+		display: inline-block;
+		width: 300px;
+		vertical-align: middle;
+		h3 {
+			margin: 0;
+		}
+		p {
+		
+			padding: 0;
+			font-size: 1.1em;
+			text-align: left;
+			line-height: 2em;
+		}
+	}
+	
+}
+
+.clear {
+clear: both;
+}
+
+#tenacityDesc {
+	margin-top: -300px;
+	background-color: $mainColor;
+	
+	div:first-child {
+		min-height: 300px;
+	}
+	
+	span {
+		display: block;
+		padding: 10px 0;
+		background: #eee;
+		color: #000;
+		border-radius: 5px;
+		max-width: 350px;
+		width: 100%;
+		margin: 10px auto;
+	}
+
+}
+
+#canvasTop {
+	height: 100vh;
+	border-bottom: 200px solid $mainColor;
+	background-image: url('top.png');
+	width: 100vw;
+	background-position-y: -25px;
+	z-index: 11;
+	
+}
+
+#passionDesc {
+	height: 80vh;
+	padding: 50px 0;
+	font-size: 1.3em;
+	
+	.left-wing {
+		position: absolute;
+		float: left;
+		left: calc(50% - 350px);
+		top: 100px;
+	}
+	
+	.right-wing {
+		position: absolute;
+		float: left;
+		left: calc(50% + 180px);
+		top: 100px;
+	}
+	
+	.myEmail {
+		font-size: 2em;
+	}
+}
+
+.svgDraw {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    transform: scale(0.8);
+}
+
+
+
+#lifeDesc {
+	padding-top: 0px;
+
+	h2 {
+		color: #9bce53;
+		font-size: 4em;
+		margin-bottom: 0;
+	}
+
+}
+
+#tenacityDesc {
+padding: 0px;
+}
+
+#tenacityCave {
+	margin-top: -250px;
+}
+
+#passionCave {
+	margin-top: -300px;
+}
+
+
+.mobile {
+	#aboutAnri h2, #aboutAnri h3, #lifeDesc h2, .desc h2, .desc h3 {
+		font-size: 3em;
+	}
+	
+	#passionCave {
+		margin-top: 0;
+		.bg10-front {
+			border-top: 0;
+		}
+	}
+	
+	#lifeDesc h3 {
+		font-size: 2em;
+	}
+
+	#aboutAnri h2, #lifeDesc h2 {
+		margin-top: -5px;
+	}
+	
+	.anriTree .bg1 {
+	    margin-top: 25px;
+	}
+	
+	#aboutAnri {
+		hr {
+			max-width: 360px;
+		}
+		
+		p {
+			padding: 50px 30px; 
+		}
+	}
+	
+	.vigorTree {
+	
+		margin-top: 30px;
+	
+		.bg8-front {
+			border-top: 0;
+		}
+		
+	}
+		
+	#lifeDesc {
+		margin-top: -100px;
+	
+		#skillUnderline {
+			max-width: 360px;
+		}
+		
+		div > div {
+			max-width: 800px;
+		
+		}
+		
+	}
+	
+	#tenacityCave {
+		margin-top: 50px;
+		
+		.anriTree .bg9-front {
+			border-top: 0;
+			border-bottom: 0;
+		}
+			
+	}
+	
+	#tenacityDesc {
+		margin-top: -75px;
+	
+		svg {
+			display: none;
+		}
+	}
+	
+	#passionDesc {
+		h2 {
+		font-size: 2.5em;
+		}
+		
+		.myEmail {
+		font-size: 1.5em;
+		}
+		
+		svg {
+			display: none;
+		}
+	}
+}
+
