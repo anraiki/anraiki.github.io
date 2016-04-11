@@ -345,17 +345,17 @@
 	var heightOffsetWater = theWindow.height() * 0.50;
 	var vigorTree = new ScrollMagic.Controller({globalSceneOptions: {offset: heightOffset+"px", triggerHook: "onEnter", duration: "150%"}});
 	new ScrollMagic.Scene({triggerElement: ".vigorTree"})
-		.setTween("#aboutAnri", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.20) +'px, 0)'}).addIndicators().addTo(vigorTree);
+		.setTween("#aboutAnri", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.20) +'px, 0)'}).addTo(vigorTree);
 	new ScrollMagic.Scene({triggerElement: ".vigorTree"})
-		.setTween(".bg8-front", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.25) +'px, 0)'}).addIndicators().addTo(vigorTree);
+		.setTween(".bg8-front", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.25) +'px, 0)'}).addTo(vigorTree);
 	new ScrollMagic.Scene({triggerElement: ".vigorTree"})
-		.setTween("#lifeDesc > div", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.20) +'px, 0)'}).addIndicators().addTo(vigorTree);
+		.setTween("#lifeDesc > div", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.20) +'px, 0)'}).addTo(vigorTree);
 	new ScrollMagic.Scene({triggerElement: ".vigorTree"})
-		.setTween("#tenacityCave", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.10) +'px, 0)'}).addIndicators().addTo(vigorTree);
+		.setTween("#tenacityCave", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.10) +'px, 0)'}).addTo(vigorTree);
 	
 	var waterCave = new ScrollMagic.Controller({globalSceneOptions: {offset: heightOffsetWater+"px", triggerHook: "onEnter", duration: "175%"}});
 	new ScrollMagic.Scene({triggerElement: "#tenacityCave"})
-		.setTween(".bg9-front", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.15) +'px, 0)'}).addIndicators().addTo(waterCave);
+		.setTween(".bg9-front", {transform: 'translate3d(0, -'+ (theWindow.height() * 0.15) +'px, 0)'}).addTo(waterCave);
 
 		
   </script></body></html>
