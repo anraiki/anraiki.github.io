@@ -113,13 +113,14 @@ body {
   background-image: url("water-front.svg");
   z-index: 5;
   background-position-y: top;
-  border-top: solid 30px #313D2C;
-  border-bottom: solid 300px #313D2C;
+  border-bottom: solid 10vh #313D2C;
+  border-top: solid 6vh #313D2C;
 }
 
 .anriTree .bg9-back {
   background-image: url("water-back.svg");
   z-index: 4;
+  border-bottom: solid 10vh #313D2C;
 }
 
 .anriTree .bg10-front {
@@ -193,7 +194,11 @@ nav a:hover {
 }
 
 #aboutAnri {
-	border-top: solid 14vh #313d2c;
+	border-top: solid 8vh #313d2c;
+}
+
+#lifeDesc {
+	margin-top: -10vh;
 }
 
 #aboutAnri,
