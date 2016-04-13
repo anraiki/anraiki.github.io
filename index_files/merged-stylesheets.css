@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+div {
+	-webkit-transform:translateZ(0);
+	-webkit-transition:all 0s linear;
+	-moz-transition:all 0s linear;
+	-ms-transition:all 0s linear;
+	-o-transition:all 0s linear;
+	transition:all 0s linear;
+}
+
 .loaded {
   opacity: 0;
 }
