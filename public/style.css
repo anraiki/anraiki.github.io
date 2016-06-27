@@ -22,7 +22,11 @@ div {
 	transition:all 0s linear;
 }
 
-#navButton, #exitButton {
+#navButton {
+	display: none;
+}
+
+.mobile #navButton, .mobile #exitButton {
     position: fixed;
     top: 2vh;
     right: 2vh;
