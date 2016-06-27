@@ -39,6 +39,7 @@ div {
     border-radius: 100px;
 	cursor: pointer;
 	color: #fff;
+	display: block;
 }
 
 
