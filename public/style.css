@@ -430,15 +430,19 @@ nav a:hover {
   font-size: 1.3em;
 }
 
+.left-wing, .right-wing {
+	display: none;
+}
+
 #passionDesc .left-wing {
-  position: absolute;
+  position: relative;
   float: left;
   left: calc(50% - 350px);
   top: 100px;
 }
 
 #passionDesc .right-wing {
-  position: absolute;
+  position: relative;
   float: left;
   left: calc(50% + 180px);
   top: 100px;
