@@ -192,7 +192,7 @@ nav {
   border-bottom: 1px solid rgba(255, 165, 0, 0.25);
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 999;
   width: 100%;
   background: #313d2c;
 }
@@ -3897,4 +3897,14 @@ nav a:hover {
 
 .mobile #mainTree div {
 	background: none !important;
+}
+
+#aboutMe {
+    position: fixed;
+    top: 70vh;
+}
+
+#top {
+	position: fixed;
+	top: 0;
 }

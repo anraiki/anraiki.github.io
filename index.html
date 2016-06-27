@@ -20,15 +20,16 @@
 <body id="skrollr-body">
 <div class="se-pre-con animated"></div>
 <nav>
-	<h1><a href="#">Anraiki</a></h1>
+	<h1><a href="#top">Anraiki</a></h1>
 	<ul>
-		<li><a href="#about">About</a></li>
+		<li><a href="#aboutMe">About</a></li>
 		<li><a href="#portfolio">Portfolio</a></li>
 		<li><a href="#contact">Contact</a></li>
 	</ul>
 </nav>
 <div class="loaded animated">
-	<div id="mainTree" class="anriTree" =>
+	<div id="top"></div>
+	<div id="mainTree" class="anriTree">
 		<div data-top-top="transform: translate3d(0px,0px,0px);" data-top-bottom="transform: translate3d(0px,-50px,0px);" class="bg1 skrollable skrollable-between" style="transform: translate3d(0px, 0px, 0px); height: 892.031px;"></div>
 		<div data-top-top="transform: translate3d(0px,-30px,0px);" data-top-bottom="transform: translate3d(0px,50px,0px);" class="bg1-2 skrollable skrollable-between" style="transform: translate3d(0px, -30px, 0px); height: 892.031px;"></div> <!-- Grass 2 -->
 		<div data-top-top="transform: translate3d(0px,0px,0px);" data-top-bottom="transform: translate3d(0px,130px,0px);" class="bg2 skrollable skrollable-between" style="transform: translate3d(0px, 0px, 0px); height: 892.031px;"></div> <!-- Supporting Mountains -->
@@ -40,6 +41,7 @@
 		<div class="bg-color"></div><!-- Sky Backup -->		
 		<div class="singleTree"></div>
 	</div>
+	<div id="aboutMe"></div>
 	<section 
 	data-bottom-top="transform: translate3d(0px,8vh,0px);" 
 	data-center="transform: translate3d(0px,-2vh,0px);" 
@@ -64,7 +66,7 @@
 			</div>
 			<hr data-bottom-bottom="transform: scale(0,1);" data-30p-center-center="transform: scale(1,1);" class="skrollable skrollable-before">
 			<p>Welcome. My name is Anri, short for Anraiki and onomatopoeia of Henry (my real name). Anraiki is another onomatopoeia of Unlikely in Romanization of Japanese. I am a web painter, and I love painting websites. See my work unfold here.</p>
-			<hr data-bottom-bottom="transform: scale(0,1);" data-30p-center-center="transform: scale(1,1);" class="skrollable skrollable-before">
+			<hr data-bottom-bottom="transform: scale(0,1);" data-38p-center-center="transform: scale(1,1);" class="skrollable skrollable-before">
 		</div>
 	</section>
 	<div class="anriTree vigorTree after">
@@ -480,5 +482,18 @@
 			}
 	});
 		
-		
+	$(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html, body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
   </script></body></html>
