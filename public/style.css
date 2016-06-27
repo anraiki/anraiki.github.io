@@ -3900,11 +3900,13 @@ nav a:hover {
 }
 
 #aboutMe {
-    position: fixed;
-    top: 70vh;
+	position: relative;
+	top: -20vh;
+	z-index: 99999;
 }
 
 #top {
-	position: fixed;
+	position: static;
 	top: 0;
+	z-index: -999;
 }
