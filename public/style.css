@@ -227,6 +227,10 @@ nav a:hover {
 	border-top: solid 8vh #313d2c;
 }
 
+.mobile #about {
+	border: 0;
+}
+
 #about h2, #tenacityDesc h2, #passionDesc h2 {
 	opacity: 0;
 }
@@ -3895,8 +3899,16 @@ nav a:hover {
 	padding-top: 4%;
 }
 
-.mobile #mainTree div {
+.mobile #mainTree .desktop {
 	background: none !important;
+}
+
+.mobile .singleTree {
+  background-image: url("top.png") !important;
+}
+
+.mobile .anriTree .bg1-2 {
+	border: 0;
 }
 
 #aboutMe {
