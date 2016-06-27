@@ -20,11 +20,11 @@
 <body id="skrollr-body">
 <div class="se-pre-con animated"></div>
 <nav>
-	<h1>Anraiki</h1>
+	<h1><a href="#">Anraiki</a></h1>
 	<ul>
-		<li>About</li>
-		<li>Portfolio</li>
-		<li>Contact</li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#portfolio">Portfolio</a></li>
+		<li><a href="#contact">Contact</a></li>
 	</ul>
 </nav>
 <div class="loaded animated">
@@ -38,12 +38,13 @@
 		<div data-top-top="transform: translate3d(0px,0px,0px);" data-top-bottom="transform: translate3d(0px,170px,0px);" class="bg6 skrollable skrollable-between" style="transform: translate3d(0px, 0px, 0px); height: 892.031px;"></div> <!-- Mountains -->
 		<div data-top-top="transform: translate3d(0px,-40px,0px);" data-top-bottom="transform: translate3d(0px,250px,0px);" class="bg7 skrollable skrollable-between" style="transform: translate3d(0px, -40px, 0px); height: 892.031px;"></div> <!-- Sky -->
 		<div class="bg-color"></div><!-- Sky Backup -->		
+		<div class="singleTree"></div>
 	</div>
 	<section 
 	data-bottom-top="transform: translate3d(0px,8vh,0px);" 
 	data-center="transform: translate3d(0px,-2vh,0px);" 
 	data-top-bottom="transform: translate3d(0px,-18vh,0px);"
-	id="aboutAnri">
+	id="about">
 		<div>
 			<h2 data-bottom-bottom="opacity: 0;" data-center-center="opacity: 1;" class="skrollable skrollable-before">Anraiki</h2>
 			<div class="meContent">
@@ -344,11 +345,11 @@
 		</div>
 	</section>
 	<section id="tenacityDesc" class="desc skrollable skrollable-before" style="transform: translate3d(0px, 0px, 0px);">
-		<div>
+		<div id="portfolio">
 		  <h2 style="color: rgb(82, 229, 183);" 
 		  data-20p-bottom-top="opacity: 0;" 
 		  data-20p-center-bottom="opacity: 1;" class="skrollable skrollable-before">Portfolio</h2>
-		  <div id="portfolio">
+		  <div>
 			<div><img src="index_files/boon.png"/></div>
 			<div><img src="index_files/alpha.png"/></div>
 			<div><img src="index_files/chant.png"/></div>
@@ -403,7 +404,7 @@
 			</svg>
 		  <p style="padding: 0;">
 			  <br>Send me an email
-			  <br><strong class="myEmail">anraiki@gmail.com</strong>
+			  <br><strong id="contact" class="myEmail">anraiki@gmail.com</strong>
 		  </p>
 		</div>
 	</section>
@@ -440,6 +441,7 @@
 			$(".anriTree div").css({height: newHeight});
 			$("#tenacityCave div").css({height: heightWater});
 			$("nav li").css({padding: "1%"});
+			$("nav h1").css({padding: "1%"});
 		} else if (theWindow.height() > theWindow.width()) {
 			newHeight = theWindow.height();
 			$(".anriTree").css({height: newHeight});

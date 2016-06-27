@@ -208,12 +208,11 @@ nav li {
 
 nav h1 {
 	float: left;
-	padding: 0.6% 1%;
 }
 
 nav a {
   margin: 0px;
-  padding: 15px 25px;
+  padding: 0;
   color: white;
   text-decoration: none;
   display: inline-block;
@@ -224,15 +223,15 @@ nav a:hover {
   color: orange;
 }
 
-#aboutAnri {
+#about {
 	border-top: solid 8vh #313d2c;
 }
 
-#aboutAnri h2, #tenacityDesc h2, #passionDesc h2 {
+#about h2, #tenacityDesc h2, #passionDesc h2 {
 	opacity: 0;
 }
 
-.mobile #aboutAnri h2, .mobile #lifeDesc h2, .mobile #tenacityDesc h2, .mobile #passionDesc h2 {
+.mobile #about h2, .mobile #lifeDesc h2, .mobile #tenacityDesc h2, .mobile #passionDesc h2 {
 	opacity: 1;
 }
 
@@ -240,7 +239,7 @@ nav a:hover {
 	margin-top: -10vh;
 }
 
-#aboutAnri,
+#about,
 #lifeDesc,
 .desc {
   position: relative;
@@ -248,7 +247,7 @@ nav a:hover {
   width: 100%;
 }
 
-#aboutAnri #mePicture,
+#about #mePicture,
 #lifeDesc #mePicture,
 .desc #mePicture {
   border-radius: 150px;
@@ -257,34 +256,34 @@ nav a:hover {
   width: 7rem;
 }
 
-#aboutAnri a,
+#about a,
 #lifeDesc a,
 .desc a {
   color: #fff;
   text-decoration: none;
 }
 
-#aboutAnri .meContent,
+#about .meContent,
 #lifeDesc .meContent,
 .desc .meContent {
   padding-bottom: 25px;
 }
 
-#aboutAnri .fa-stack,
+#about .fa-stack,
 #lifeDesc .fa-stack,
 .desc .fa-stack {
   font-size: 3rem;
   vertical-align: super;
 }
 
-#aboutAnri .fa-inverse,
+#about .fa-inverse,
 #lifeDesc .fa-inverse,
 .desc .fa-inverse {
   color: orange !important;
 }
 
-#aboutAnri h2,
-#aboutAnri h3,
+#about h2,
+#about h3,
 #lifeDesc h2,
 #lifeDesc h3,
 .desc h2,
@@ -295,21 +294,21 @@ nav a:hover {
   position: relative;
 }
 
-#aboutAnri h3,
+#about h3,
 #lifeDesc h3,
 .desc h3 {
   margin-top: 100px;
   font-size: 1.8em;
 }
 
-#aboutAnri div,
+#about div,
 #lifeDesc div,
 .desc div {
   padding: 0;
   text-align: center;
 }
 
-#aboutAnri hr,
+#about hr,
 #lifeDesc hr,
 .desc hr {
   border: 1px solid orange;
@@ -318,7 +317,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-#aboutAnri p,
+#about p,
 #lifeDesc p,
 .desc p {
   padding: 50px 0;
@@ -326,7 +325,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-#aboutAnri .skillDesc,
+#about .skillDesc,
 #lifeDesc .skillDesc,
 .desc .skillDesc {
   display: inline-block;
@@ -334,13 +333,13 @@ nav a:hover {
   vertical-align: middle;
 }
 
-#aboutAnri .skillDesc h3,
+#about .skillDesc h3,
 #lifeDesc .skillDesc h3,
 .desc .skillDesc h3 {
   margin: 0;
 }
 
-#aboutAnri .skillDesc p,
+#about .skillDesc p,
 #lifeDesc .skillDesc p,
 .desc .skillDesc p {
   padding: 0;
@@ -432,8 +431,8 @@ nav a:hover {
   margin-top: -300px;
 }
 
-.mobile #aboutAnri h2,
-.mobile #aboutAnri h3,
+.mobile #about h2,
+.mobile #about h3,
 .mobile #lifeDesc h2,
 .mobile .desc h2,
 .mobile .desc h3 {
@@ -452,16 +451,16 @@ nav a:hover {
   font-size: 2em;
 }
 
-.mobile #aboutAnri h2,
+.mobile #about h2,
 .mobile #lifeDesc h2 {
   margin-top: -5px;
 }
 
-.mobile #aboutAnri hr {
+.mobile #about hr {
   max-width: 360px;
 }
 
-.mobile #aboutAnri p {
+.mobile #about p {
   padding: 50px 30px;
 }
 
@@ -3875,6 +3874,10 @@ nav a:hover {
 	display: none;
 }
 
+#webDevelopMobi {
+	display: none;
+}
+
 .mobile #webDevelopMobi {
 	display: block;
 }
@@ -3886,4 +3889,12 @@ nav a:hover {
 
 .mobile #executionSvg {
 	stroke-dasharray: 0px;
+}
+
+#portfolio {
+	padding-top: 4%;
+}
+
+.mobile #mainTree div {
+	background: none !important;
 }
