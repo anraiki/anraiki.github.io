@@ -1,0 +1,30 @@
+{
+  "name": "anraiki",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aspect-ratio": "^2.1.1",
+    "lodash": "^4.17.15",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-gsap": "^3.2.1",
+    "react-scripts": "^4.0.3",
+    "react-scrollmagic": "^2.1.1",
+    "scrollmagic": "^2.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
