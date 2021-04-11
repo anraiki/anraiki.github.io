@@ -22,7 +22,7 @@ class Water extends Component {
         ];
       return (
             <Controller>
-                <Scene indicators={true} duration={duration} indicator={true} pushFollowers={false} triggerHook="onEnter" >
+                <Scene indicators={false} duration={duration} pushFollowers={false} triggerHook="onEnter" >
                     <Timeline wrapper={<section id="tenacity" className="illustration" style={containerStyle} />}>
                         {Images.map((data, i) => {
                             let fromAnimation = duration === "100%" ? {yPercent: data.yFrom} : {yPercent: data.yFrom};

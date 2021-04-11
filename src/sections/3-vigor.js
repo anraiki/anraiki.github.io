@@ -22,7 +22,7 @@ class Vigor extends Component {
         ];
       return (
             <Controller>
-                <Scene indicators={true} duration={duration} indicator={true} pushFollowers={false} triggerHook="onEnter" >
+                <Scene duration={duration} indicator={false} pushFollowers={false} triggerHook="onEnter" >
                     <Timeline wrapper={<section id="vigor" className="illustration" style={containerStyle} />}>
                         {Images.map((data, i) => {
                             let fromAnimation = duration === "100%" ? {yPercent: data.yFrom} : {yPercent: data.yFrom};

@@ -7,7 +7,7 @@ class Skill extends Component {
       return (
         <section className="skills">            
         <Controller>
-                <Scene indicators={true} duration={"50%"} pushFollowers={false} triggerHook="onEnter" >
+                <Scene indicators={false} duration={"50%"} pushFollowers={false} triggerHook="onEnter" >
                     <Timeline>
                         <Tween
                             position="0"
@@ -20,7 +20,7 @@ class Skill extends Component {
                 </Scene>
             </Controller>
             <Controller>
-                <Scene indicators={true} duration={"50%"} pushFollowers={false} triggerHook="onEnter" >
+                <Scene indicators={false} duration={"50%"} pushFollowers={false} triggerHook="onEnter" >
                     <Timeline>
                         <Tween
                             position="0"
@@ -38,7 +38,7 @@ class Skill extends Component {
             <div>
                 <div id="skill-creative">
                     <Controller>
-                        <Scene indicators={true} duration={"60%"} pushFollowers={false} triggerHook="onEnter" >
+                        <Scene indicators={false} duration={"60%"} pushFollowers={false} triggerHook="onEnter" >
                             <Timeline>
                                 <Tween
                                     position="0"

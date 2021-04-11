@@ -9,7 +9,7 @@ class About extends Component {
         
                     <section id="about">
                         <Controller>
-                            <Scene indicators={true} duration={"80%"} pushFollowers={false} triggerHook="onEnter" >
+                            <Scene indicators={false} duration={"80%"} pushFollowers={false} triggerHook="onEnter" >
                                 <Timeline>
                                     <Tween
                                         position="0"
@@ -38,7 +38,7 @@ class About extends Component {
                             </a>
                         </div>
                         <Controller>
-                            <Scene indicators={true} duration={"75%"} pushFollowers={false} triggerHook="onEnter" >
+                            <Scene indicators={false} duration={"75%"} pushFollowers={false} triggerHook="onEnter" >
                                 <Timeline>
                                     <Tween
                                         position="0"
@@ -54,7 +54,7 @@ class About extends Component {
                         <p>Hi and welcome! My name is Anraiki. You can call me Anri for short or by my real name Henry (They all sound closely together).</p>
                         <p>I am a web painter. See my work unfold here.</p>
                         <Controller>
-                            <Scene indicators={true} duration={"50%"} pushFollowers={false} triggerHook="onEnter" >
+                            <Scene indicators={false} duration={"50%"} pushFollowers={false} triggerHook="onEnter" >
                                 <Timeline>
                                     <Tween
                                         position="0"
