@@ -66,20 +66,6 @@ class Portfolio extends Component {
                 </div>
                 <div>
                     <div>
-                        <a target="_blank"  rel="noopener noreferrer"href="https://as.wordpress.org/plugins/kommiku/">
-                            <img src="./media/portfolio-kommiku.png" alt="Kommiku, a old deprecated non-working Wordpress Plugin" />
-                        </a>
-                    </div>
-                    <div>
-                        <h3 style={{color: "#9bce53"}}>Kommiku</h3>
-                        <p>A nice user experience for a web comic alleviated by this Wordpress plugin. But now it's old and deprecated.</p>
-                        <a target="_blank"  rel="noopener noreferrer"href="https://as.wordpress.org/plugins/kommiku/">
-                            <button>View Plugin</button>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div>
                         <a target="_blank"  rel="noopener noreferrer" href="https://itunes.apple.com/us/app/daily-hope/id659272511?mt=8">
                             <img src="./media/portfolio-dotspiral.png" alt="dotSpiral" />
                         </a>
