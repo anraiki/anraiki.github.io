@@ -12,8 +12,11 @@ const ratio         = require('aspect-ratio')
 class App extends Component {
     constructor(props){
 		super(props);
+
         window.addEventListener("resize", _.debounce(() => {
-			if(window.innerWidth > 1920) {
+            let aspect       = ratio(window.innerWidth, window.innerHeight);
+            let res_ratio    = aspect.split(":");
+			if(res_ratio[0] < res_ratio[1]) {
                 // window.location.reload();
 				const scale_height = window.innerWidth * 0.565;
 				this.setState({scale_height: scale_height});
@@ -22,9 +25,9 @@ class App extends Component {
             }
             // window.location.reload();
         },500));
-        const aspect        = ratio(window.innerWidth, window.innerHeight);
+
+        const aspect       = ratio(window.innerWidth, window.innerHeight);
         const res_ratio    = aspect.split(":");
-        console.log();
         const scale_height = res_ratio[0] < res_ratio[1] ? window.innerWidth * 0.565 : "100vh"; 
 		this.state = {
 			scale_height: scale_height
